@@ -1,0 +1,9 @@
+.coin{
+    width: 31%;
+    float: left;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
