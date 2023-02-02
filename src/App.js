@@ -34,7 +34,7 @@ function App() {
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Portfolio Tracker</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">News</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Account</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sign Up</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">SignUp</a>
               
           </div>
           <br></br>
