@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -18,12 +19,12 @@ const Header = () => {
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">SignUp</a>
               
           </div>
-          <br></br>
+          {/* <br></br> */}
           {/* <h1>Crypto Tracker</h1> */}
-          <h1>............</h1>
+          {/* <h1>............</h1> */}
 
       </div> 
-        <br></br>
+        {/* <br></br> */}
     </header>
     </div>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import './Homepage.css';
 import Axios from 'axios';
 import { useEffect, useState } from 'react';
-import Coin from "/Users/jitwarsingh/Documents/University/Year3/CryptoWebapp/crypto-tracker/src/components/Coin.js";
+import Coin from "../components/Coin.js";
 
 const Homepage = () => {
 
@@ -23,14 +23,16 @@ const Homepage = () => {
 
     <div className="App">
 
-
-
-      
-      <div className='displayCrypto'> {listOfCoins.map((coin) => {
+    <br></br>
+    <h1>CT</h1>
+    <br></br>
+    
+      <div className='displayCryptoH'> {listOfCoins.map((coin) => {
         return (<Coin 
         name = {coin.name} 
         symbol = {coin.symbol} 
         current_price = {coin.current_price}
+        img = {coin.image}
         />
       );
       })}
