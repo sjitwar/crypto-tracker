@@ -3,10 +3,13 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import './CryptoDetailPage.css';
 import { Line } from 'react-chartjs-2';
+import { Chart, registerables } from 'chart.js';
+Chart.register(...registerables);
 
 function CryptoDetailPage(props) {
   const [cryptoData, setCryptoData] = useState(null);
   const [chartData, setChartData] = useState(null);
+  const [numCoins, setNumCoins] = useState(0);
 
   const {id} = useParams();
   useEffect(() => {
@@ -34,6 +37,14 @@ function CryptoDetailPage(props) {
         console.log(error);
       });
   }, [id]);
+
+  const calculateValue = () => {
+    if (cryptoData) {
+      const { market_data } = cryptoData;
+      const value = market_data.current_price.usd * numCoins;
+      return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    }
+  };
   
 
   if (!cryptoData) {
@@ -53,7 +64,17 @@ function CryptoDetailPage(props) {
       <p>24h High: ${market_data.high_24h.usd.toFixed(2)}</p>
       <p>24h Low: ${market_data.low_24h.usd.toFixed(2)}</p>
       <p>24h Change: {market_data.price_change_percentage_24h.toFixed(2)}%</p>
-      {chartData && <Line data={chartData} />}
+      <div className='chart'>
+        {chartData && <Line data={chartData} />}
+      </div>
+      
+
+      <div className="calculator">
+        <label htmlFor="numCoins">Number of coins:</label>
+        <input type="number" id="numCoins" value={numCoins} onChange={(e) => setNumCoins(e.target.value)} />
+        <p>Value: {calculateValue()}</p>
+      </div>  
+
     </div>
   );
 }
