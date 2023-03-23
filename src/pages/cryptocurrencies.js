@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./cryptocurrencies.css"
+import { useNavigate } from 'react-router-dom';
 
 function SearchBar(props) {
   const handleSearch = (event) => {
@@ -31,6 +32,9 @@ function CryptoTable() {
   const [cryptos, setCryptos] = useState([]);
   const [search, setSearch] = useState('');
 
+  const navigate = useNavigate();
+
+
   useEffect(() => {
     axios
       .get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
@@ -43,11 +47,16 @@ function CryptoTable() {
   }, []);
 
   const filteredCryptos = cryptos.filter((crypto) =>
-    crypto.name.toLowerCase().includes(search.toLowerCase())
+    crypto.name.toLowerCase().includes(search.toLowerCase()) || crypto.symbol.toLowerCase().includes(search.toLowerCase())
   );
 
+  const handleCryptoClick = (id) => {
+    navigate(`/crypto/${id}`);
+  };
+
   return (
-    <div style={{ backgroundColor: '', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+ 
+    <div className='page' style={{ backgroundColor: '', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <div className='title'>Top 100 Coins</div>
       <SearchBar setSearch={setSearch} />
       <table style={{ maxWidth: '800px' }}>
@@ -62,9 +71,9 @@ function CryptoTable() {
         </thead>
         <tbody>
           {filteredCryptos.map((crypto) => (
-            <tr key={crypto.id}>
+            <tr key={crypto.id} onClick={() => handleCryptoClick(crypto.id)}>
               <td><img style={{ width: '50px', height: '50px'}} src={crypto.image} alt="Coin img"></img></td>
-              <td>{crypto.name}</td>
+              <td>{crypto.name} </td>
               <td>{crypto.symbol.toUpperCase()}</td>
               <td>${crypto.current_price.toFixed(2)}</td>
               <td>${crypto.market_cap.toLocaleString()}</td>

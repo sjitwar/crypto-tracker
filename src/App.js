@@ -6,6 +6,8 @@ import PortfolioPage from "./pages/Portfolio";
 import Header from "./components/Header";
 import Homepage from './pages/Homepage';
 import ExchangePage from "./pages/Exchanges";
+import CryptoDetailPage from './pages/CryptoDetailPage';
+import SigninPage from './pages/Signin';
 
 function App() {
 
@@ -14,13 +16,15 @@ function App() {
     <BrowserRouter>
     <div>
       <Header />
-      <br></br>
-      <br></br>
+
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/cryptocurrencies" element={<CryptoPage />}></Route>
+        <Route path="/crypto/:id" element={<CryptoDetailPage />}></Route> 
         <Route path="/exchanges" element={<ExchangePage />}></Route>
         <Route path="/portfolio" element={<PortfolioPage />}></Route>
+        <Route path="/signin" element={<SigninPage />}></Route>
+
       </Routes>
       
     </div>

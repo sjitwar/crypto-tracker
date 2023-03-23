@@ -1,6 +1,8 @@
-.w3-top {
+.header {
     background-color: rgb(4, 4, 4);
     font-family: 'Ubuntu', sans-serif;
     color:aqua;
     height: 50px;
+    padding: 10px;
+
   }
