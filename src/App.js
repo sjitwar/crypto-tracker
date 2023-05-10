@@ -23,8 +23,7 @@ function App() {
         <Route path="/crypto/:id" element={<CryptoDetailPage />}></Route> 
         <Route path="/exchanges" element={<ExchangePage />}></Route>
         <Route path="/portfolio" element={<PortfolioPage />}></Route>
-        <Route path="/signin" element={<SigninPage />}></Route>
-
+        {/* <Route path="/signin" element={<SigninPage />}></Route> */}
       </Routes>
       
     </div>

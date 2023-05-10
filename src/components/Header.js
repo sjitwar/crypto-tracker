@@ -9,7 +9,7 @@ function Header() {
       <Link to="/cryptocurrencies" style={{ marginLeft: '20px' }}>Cryptocurrencies</Link>
       <Link to="/exchanges" style={{ marginLeft: '20px' }}>Exchanges</Link>
       <Link to="/portfolio" style={{ marginLeft: '20px' }}>portfolio</Link>
-      <Link to="/signin" style={{ marginLeft: '1000px' }}>Sign in</Link>
+      {/* <Link to="/signin" style={{ marginLeft: '1000px' }}>Sign in</Link> */}
     </div>
   );
 }

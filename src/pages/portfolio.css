@@ -1,0 +1,118 @@
+/* .user-form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 50px auto;
+    max-width: 800px;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+} */
+
+.user-form{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    height: 500px;
+    border: 2px solid aqua;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    padding: 20px;
+}
+
+select{
+    border-radius: 1px solid #ddd ;
+}
+
+.log-in, .sign-up {
+    width: 45%;
+  }
+  
+  .log-in form, .sign-up form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .log-in input, .sign-up input, .log-in button, .sign-up button {
+    margin-top: 10px;
+  }
+  
+  .log-in h1, .sign-up h1 {
+    margin-bottom: 10px;
+  }
+
+  input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  p{
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  button {
+    background-color: white;
+    border-color: aqua 1px;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    border-color: white;
+    background-color: black; 
+    color: white;
+  }
+
+  .top-right {
+    float: right;
+  }
+
+  .wallet-info{
+    width: 100%;
+    /* float: left; */
+    padding: 20px;
+    /* margin-right: 20px;
+    /* margin-left: 20px; */
+    /* margin-bottom: 20px;  */
+    border: 2px solid aqua;
+    border-radius: 20px;
+  }
+
+  .custom-port{
+    width: 100%;
+    /* float: left; */
+    padding: 20px;
+    /* margin-right: 20px;
+    /* margin-left: 20px; */
+    /* margin-bottom: 20px;  */
+    border: 2px solid aqua;
+    border-radius: 20px;
+  }
+  .custom-port2{
+    width: 100%;
+    /* float: left; */
+    padding: 20px;
+    /* margin-right: 20px;
+    /* margin-left: 20px; */
+    /* margin-bottom: 20px;  */
+    border: 2px solid aqua;
+    border-radius: 20px;
+  }

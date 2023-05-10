@@ -1,4 +1,11 @@
-1. Add price/marketcap filters in cryptocurrencies.js
-2. social media analysis/ machine learning OR prediction?
-3. news api
-4. user sign in 
+---------------------------------------------------------1. Add price/marketcap filters in cryptocurrencies.js
+--------------------------------------------------------2. social media analysis/ machine learning OR prediction?
+--------------------------------------------------------3. news api
+-----------------------------------4. user sign in - hash password for security.
+5. Price alerts
+6. crypto converter e.g usdt to gbp/btc (coin stat example)
+FIX CHART - 1d 1w 1m etc drop down
+allow users to change login details
+WATCHLIST
+const API_KEY = 'G8RRXCWNHPH1YDK9E71B2FUMJMIRXVRFMK';
+

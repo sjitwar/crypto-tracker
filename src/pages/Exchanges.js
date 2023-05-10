@@ -49,26 +49,31 @@ function Exchanges() {
   const filteredCryptos = cryptos.filter((crypto) =>
     crypto.name.toLowerCase().includes(search.toLowerCase()));
 
-  const handleCryptoClick = (id) => {
-    navigate(`/crypto/${id}`);
-  };
+  // const handleCryptoClick = (id) => {
+  //   navigate(`/crypto/${id}`);
+  // };
 
   return (
     <div style={{ backgroundColor: '', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <div className='title'>Top 100 Exchanges</div>
+        <div className='title'>Exchanges</div>
       <SearchBar setSearch={setSearch} />
       <table style={{ maxWidth: '800px' }}>
         <thead>
           <tr>
             <th>Name</th>
             <th>trade_volume_24h_btc</th>
+            <th>URL</th>
           </tr>
         </thead>
         <tbody>
           {filteredCryptos.map((crypto) => (
-            <tr key={crypto.id} onClick={() => handleCryptoClick(crypto.id)}>
+            <tr key={crypto.id} >
               <td>{crypto.name} </td>
-              <td>{crypto.trade_volume_24h_btc}</td>
+              <td>{crypto.trade_volume_24h_btc.toFixed(2)}</td>
+              <td ><a href={crypto.url} >
+                visit
+              </a>
+              </td>
             </tr>
           ))}
         </tbody>

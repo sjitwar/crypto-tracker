@@ -1,0 +1,125 @@
+/* Basic styles */
+
+/* body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  */
+  
+  button {
+    cursor: pointer;
+  } 
+  
+  /* Layout styles */
+  
+  /* .portfolio {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .portfolio-info {
+    margin-top: 20px;
+  }
+  
+  .wallet-info {
+    margin-top: 20px;
+  }
+  
+  .user-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .log-in, .sign-up {
+    width: 45%;
+  }
+  
+  .log-in form, .sign-up form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .log-in input, .sign-up input, .log-in button, .sign-up button {
+    margin-top: 10px;
+  }
+  
+  .log-in h1, .sign-up h1 {
+    margin-bottom: 10px;
+  } */
+  
+  /* Table styles */
+  
+  /* table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  } */
+  
+  /* Form styles */
+  
+  /* label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  */
+  /* select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+  }  */
+  
+  /* Button styles */
+  
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
