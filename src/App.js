@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
-import CryptoPage from "./pages/Cryptocurrencies";
+import CryptoPage from "./pages/cryptocurrencies";
 import PortfolioPage from "./pages/Portfolio";
 import Header from "./components/Header";
 import Homepage from './pages/Homepage';
